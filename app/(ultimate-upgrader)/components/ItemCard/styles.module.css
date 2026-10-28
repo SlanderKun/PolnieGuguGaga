@@ -1,0 +1,47 @@
+@layer components {
+  .card {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid color-mix(in srgb, var(--c) 40%, transparent);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: var(--c);
+  }
+  .name {
+    font-size: 14px;
+    font-weight: 700;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .valueRow {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .value {
+    font-weight: 800;
+    color: #ffd84d;
+    font-variant-numeric: tabular-nums;
+    font-size: 14px;
+  }
+  .sell {
+    width: 100%;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,127 @@
+@layer components {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .viewport {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.35);
+  }
+  .pointerLine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    transform: translateX(-50%);
+    background: #38bdf8;
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.9);
+    z-index: 3;
+  }
+  .pointerTri {
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 9px solid #38bdf8;
+  }
+  .track {
+    position: relative;
+  }
+  .strip {
+    display: flex;
+    gap: 8px;
+    will-change: transform;
+  }
+  .cell {
+    width: 120px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid color-mix(in srgb, var(--c) 27%, transparent);
+    background: linear-gradient(180deg, color-mix(in srgb, var(--c) 9%, transparent), rgba(0, 0, 0, 0.25));
+  }
+  .cellName {
+    font-size: 12px;
+    max-width: 104px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .resultSlot {
+    min-height: 58px;
+  }
+  .result {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 20px;
+    border-radius: 14px;
+    border: 1px solid var(--c);
+    background: #121828;
+    box-shadow: 0 0 20px color-mix(in srgb, var(--c) 40%, transparent);
+  }
+  .resultName {
+    font-weight: 800;
+    color: var(--c);
+  }
+  .resultValRow {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .resultVal {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffd84d;
+  }
+  .spinBtn {
+    padding: 12px 40px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #38bdf8, #7c3aed);
+    box-shadow: 0 0 28px rgba(56, 189, 248, 0.5);
+  }
+  .btnRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .fastBtn {
+    padding: 12px 24px;
+    font-size: 15px;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+  }
+  .fastBtn:hover {
+    border-color: #5cc8ff;
+    background: rgba(56, 189, 248, 0.08);
+  }
+  .spinInner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hint {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}

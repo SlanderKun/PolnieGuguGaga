@@ -1,0 +1,47 @@
+@layer components {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+  .title {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+  .accent {
+    color: #38bdf8;
+  }
+  .sub {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .balance {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 216, 77, 0.35);
+    background: rgba(255, 216, 77, 0.08);
+  }
+  .balValue {
+    font-weight: 800;
+    color: #ffd84d;
+    font-variant-numeric: tabular-nums;
+  }
+}

@@ -1,17 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
-    },
-  },
+  /* конфиг минимальный: приложение полностью динамическое (состояние на клиенте),
+     строгий пререндер (cacheComponents/partialPrefetching) тут не нужен. */
 };
 
 export default nextConfig;

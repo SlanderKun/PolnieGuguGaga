@@ -1,0 +1,55 @@
+/* Порядок CSS-слоёв: reset < mui < components.
+   Любой класс из *.module.css (слой components) гарантированно
+   перебивает дефолты MUI и reset — удобно дебажить каскад в DevTools. */
+@layer reset, mui, components;
+
+/* Анимируемый угол дуги зоны выигрыша (колесо апгрейда).
+   Без @property браузер не интерполирует custom property, и дуга прыгала бы скачком. */
+@property --arc {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img,
+  svg,
+  video,
+  canvas {
+    display: block;
+    max-width: 100%;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+}

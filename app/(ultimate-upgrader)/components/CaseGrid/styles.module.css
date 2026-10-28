@@ -1,0 +1,58 @@
+@layer components {
+  .title {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 14px;
+  }
+  .card {
+    display: block;
+    padding: 14px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid color-mix(in srgb, var(--c) 30%, rgba(255, 255, 255, 0.08));
+    background: #121828;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    border-color: var(--c);
+    box-shadow: 0 0 22px color-mix(in srgb, var(--c) 40%, transparent);
+  }
+  .thumb {
+    height: 72px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #0b0e14;
+    background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 27%, transparent));
+  }
+  .name {
+    font-weight: 800;
+    font-size: 15px;
+  }
+  .blurb {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 2px;
+  }
+  .priceRow {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .price {
+    font-weight: 800;
+    color: #ffd84d;
+  }
+}
