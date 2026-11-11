@@ -15,7 +15,9 @@ export default function LabsLayout({ children }: { children: ReactNode }) {
                 }}
             >
                 <NavList />
-                {children}
+                <div>
+                    {children}
+                </div>
             </nav>
         </>
     );

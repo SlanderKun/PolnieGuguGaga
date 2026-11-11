@@ -19,7 +19,7 @@ const HomeHeader = () => {
                 display: "flex",
                 borderRadius: "20px",
                 justifyContent: "space-between",
-            }}>Полный гугу гага</Button>
+            }}>Нормисная вкладка</Button>
             <Button
                 component={Link}
                 href={"/cases"}
