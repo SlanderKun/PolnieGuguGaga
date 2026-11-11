@@ -1,12 +1,7 @@
-import React from 'react';
-import Button from "@mui/material/Button";
+import Lab1 from "./components/Lab1/Lab1";
 
 const Page = () => {
-    return (
-        <div>
-
-        </div>
-    );
+    return <Lab1 />;
 };
 
 export default Page;

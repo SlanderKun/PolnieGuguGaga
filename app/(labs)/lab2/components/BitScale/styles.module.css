@@ -1,0 +1,62 @@
+.scale {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.byteGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.byteLabel {
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+.byte {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 6px;
+}
+
+.bit {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    border-radius: 4px;
+    font-family: var(--font-geist-mono), monospace;
+    font-size: 14px;
+    user-select: none;
+}
+
+.on {
+    background: #2e7d32;
+    color: #ffffff;
+    border-color: #2e7d32;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    border-color: #1976d2;
+}
+
+.highlight {
+    outline: 2px solid #1976d2;
+    outline-offset: 1px;
+}
+
+.empty {
+    opacity: 0.6;
+    font-size: 13px;
+}

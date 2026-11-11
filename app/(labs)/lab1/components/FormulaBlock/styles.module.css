@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.formula {
+    margin-top: 8px;
+    font-family: var(--font-geist-mono), monospace;
+    word-break: break-word;
+}

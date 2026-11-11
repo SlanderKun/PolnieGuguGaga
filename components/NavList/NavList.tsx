@@ -17,7 +17,15 @@ const NavList = () => {
             >
                 Лаба 1
             </Button>
-            <Button></Button>
+            <Button
+                component={Link}
+                href={"/lab2"}
+                // sx={{
+                //
+                // }}
+            >
+                Лаба 2
+            </Button>
         </div>
     );
 };

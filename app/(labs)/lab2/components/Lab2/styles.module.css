@@ -1,0 +1,25 @@
+.root {
+    padding: 24px;
+    max-width: 760px;
+}
+
+.intro {
+    margin-bottom: 24px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.mono {
+    font-family: var(--font-geist-mono), monospace;
+    opacity: 0.75;
+    word-break: break-word;
+}
